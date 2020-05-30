@@ -1,2 +1,3 @@
-# ITFnd100-Mod07
-Foundations of Python Programming:  Error Handling
+# Assignment 07
+# Foundations of Python Programming
+## Working with Binary Files and Structured Error Handling
