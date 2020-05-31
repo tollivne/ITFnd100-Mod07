@@ -22,7 +22,7 @@ def save_data_to_file(file_name, list_of_data):
     pickle.dump(list_of_data, objFile)
     objFile.close
 ```
-*Figure 2 - Saving Python Object to Binary File
+*Figure 2 - Saving Python Object to Binary File*
 
 The code that I wrote to read the binary data and save it to a Python object is shown in Figure 3.
 
@@ -34,7 +34,9 @@ def read_data_from_file(file_name):
     list_of_data = pickle.load(objFile)  # Load() only loads one row of data
     objFile.close()
     return list_of_data
-```
+```  
+*Figure 3 - Unpickling - Reading Binary Data*
+
 I am a big fan of video tutorials and the following video was great for explaining pickling in Python:
 (https://pythonprogramming.net/python-pickle-module-save-objects-serialization/, 5.30.2020, External).  What I like about this video is that he explained pickling in the beginning much like the official website describes it and then says “Okay, so what does that mean?”  Then he explains it in plain English.  I was really wondering why you would want to pickle and/or unpickle data in the first place and he explains that too.  One of the biggest advantages that I gleaned from the video is that reading in data from a large database can be up to 50 – 100 times faster than just reading the Python data objects.  A really good example of the speed of pickled file vs. JSON file can be found on stack overflow:  (https://stackoverflow.com/questions/43056751/why-is-dumping-with-pickle-much-faster-than-json, 5.30.2020, External).  The example uses a timing command to show the time it took to dump to a json vs. a pickled file and shows the results.  Stack overflow also contains a really good write-up to help you decide if you should be using pickle (https://stackoverflow.com/questions/21752259/python-why-pickle, 5.30.2020, External).
 
@@ -56,7 +58,7 @@ except FileNotFoundError as e:
     print("The program is intended to read from a file that already exists!")
     print("Please make sure the file by the name of :"+ file_name + " exists!")
 ```
-*Figure 5 - Try-Except for FileNotFound Error
+*Figure 5 - Try-Except for FileNotFound Error*
 
 When a call is intentionally made using the wrong file name, a more user-friendly error message is printed out as shown in Figure 6.
 
@@ -68,7 +70,7 @@ The program does not stop running, it continues to the next line in the code whi
 import sys
 sys.exit()
 ```
-*Figure 7 - Exiting the Program When File Is Not Found  
+*Figure 7 - Exiting the Program When File Is Not Found*  
 
 So, even when there was a problem running the program, there are no more difficult to decipher error messages.
 
@@ -84,14 +86,11 @@ except Exception as e:
     print("Built-In Python error info: ")
     print(e, e.__doc__, type(e), sep='\n')
 ```
-Figure 9 - General Exception Block
+*Figure 9 - General Exception Block*
 
 Printing the general error and type is added information that can help the developer with troubleshooting.  I also added the printing of the error, document string, and type for the FileNotFound error.  Shown in Figure 10 is a screenshot of the program running in the CMD window.  I was trying to get an error message.  The last time I ran a program in the command window, it could not find the file and I had to navigate to the directory containing the python program before running it.  I had used a “relative path” in my program.  Strangely enough, it didn’t give me the FileNotFoundError this time!
 
+[Figure 10 - Program Run in CMD Window](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Figure%2010.png)
 
-
-### Subtopic
-
-## Topic 2
-
-## Summary
+##Summary
+In this assignment, I used Python’s pickling module with the pickle.dump and the pickle.load to write data to a binary file and then read the data and print it out.  I also used structured error handling to try to foresee the type of errors a user may get and then print out a message that is more user-friendly than the built-in Python error messages.  The assignment involved researching various sources to find more information on pickling and on error handling.  I learned that pickling was faster than reading and writing to a JSON file, I learned that Git was created by the same person who created Linux and that it is not a new tool but instead has been around since 2005.  I learned a lot about the markdown language in this assignment and was able to post the assignment to the web.  I look forward to the next assignment.
