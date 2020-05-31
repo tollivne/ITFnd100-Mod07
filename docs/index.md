@@ -74,6 +74,21 @@ So, even when there was a problem running the program, there are no more difficu
 
 The final output has a much nicer appearance as shown in Figure 8.
 
+[Figure 8 - Final Output of Code run with Structured Error Handling]
+
+Lastly, a “General” exception error can be placed LAST to be invoked if the error is not caught by one of the earlier more specific errors as shown in Figure 9.
+
+```
+except Exception as e:
+    print("There was a non-specific error!")
+    print("Built-In Python error info: ")
+    print(e, e.__doc__, type(e), sep='\n')
+```
+Figure 9 - General Exception Block
+
+Printing the general error and type is added information that can help the developer with troubleshooting.  I also added the printing of the error, document string, and type for the FileNotFound error.  Shown in Figure 10 is a screenshot of the program running in the CMD window.  I was trying to get an error message.  The last time I ran a program in the command window, it could not find the file and I had to navigate to the directory containing the python program before running it.  I had used a “relative path” in my program.  Strangely enough, it didn’t give me the FileNotFoundError this time!
+
+
 
 ### Subtopic
 
