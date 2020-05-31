@@ -76,7 +76,7 @@ So, even when there was a problem running the program, there are no more difficu
 
 The final output has a much nicer appearance as shown in Figure 8.
 
-[Figure 8 - Final Output of Code run with Structured Error Handling]
+[Figure 8 - Final Output of Code run with Structured Error Handling](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Figure%208.png)
 
 Lastly, a “General” exception error can be placed LAST to be invoked if the error is not caught by one of the earlier more specific errors as shown in Figure 9.
 
