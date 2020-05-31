@@ -13,6 +13,35 @@ Pickling refers to the process of converting python data into binary.  It is als
 [Figure 1a](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Figure%201a.png)  
 [Figure 1b](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Fibure%201b.png)
 
+The code that I wrote to save the Python object data to a binary file is shown in Figure 2.
+
+```
+def save_data_to_file(file_name, list_of_data):
+    # Now we store the data with the pickle.dump method
+    objFile = open(file_name, "wb") # write binary
+    pickle.dump(list_of_data, objFile)
+    objFile.close
+```
+*Figure 2 - Saving Python Object to Binary File
+
+The code that I wrote to read the binary data and save it to a Python object is shown in Figure 3.
+
+```
+def read_data_from_file(file_name):
+    # pass  # TODO: Add code here
+    # And, we read the data back with the pickle.load method
+    objFile = open("AppData.dat", "rb")  # read binary
+    list_of_data = pickle.load(objFile)  # Load() only loads one row of data
+    objFile.close()
+    return list_of_data
+```
+I am a big fan of video tutorials and the following video was great for explaining pickling in Python:
+(https://pythonprogramming.net/python-pickle-module-save-objects-serialization/, 5.30.2020, External).  What I like about this video is that he explained pickling in the beginning much like the official website describes it and then says “Okay, so what does that mean?”  Then he explains it in plain English.  I was really wondering why you would want to pickle and/or unpickle data in the first place and he explains that too.  One of the biggest advantages that I gleaned from the video is that reading in data from a large database can be up to 50 – 100 times faster than just reading the Python data objects.  A really good example of the speed of pickled file vs. JSON file can be found on stack overflow:  (https://stackoverflow.com/questions/43056751/why-is-dumping-with-pickle-much-faster-than-json, 5.30.2020, External).  The example uses a timing command to show the time it took to dump to a json vs. a pickled file and shows the results.  Stack overflow also contains a really good write-up to help you decide if you should be using pickle (https://stackoverflow.com/questions/21752259/python-why-pickle, 5.30.2020, External).
+
+The pickle byte file has the extension “.dat”.  Pickle is used only with Python.  A note of caution is that pickle is not secure.  It is not human readable, and the pickle file could be hacked and contain malicious code.  Care should be used if reading someone else’s pickle file or downloading pickle files from the internet.  Figure 4 shows a screenshot of the code run using a file called “ToDoFile.txt.”
+
+
+
 ### Subtopic
 
 ## Topic 2
