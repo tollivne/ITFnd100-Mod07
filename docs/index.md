@@ -42,7 +42,7 @@ I am a big fan of video tutorials and the following video was great for explaini
 
 The pickle byte file has the extension “.dat”.  Pickle is used only with Python.  A note of caution is that pickle is not secure.  It is not human readable, and the pickle file could be hacked and contain malicious code.  Care should be used if reading someone else’s pickle file or downloading pickle files from the internet.  Figure 4 shows a screenshot of the code run using a file called “ToDoFile.txt.”
 
-[Figure 4 - Reading & Writing Binary Data][https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Figure%204.png)
+[Figure 4 - Reading & Writing Binary Data](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Figure%204.png)
 
 Notice the error message caused intentionally because I tried to read from a file that did not exist.  This takes us to the next subject, which is “structured error handling.”
 Structured Error Handling
