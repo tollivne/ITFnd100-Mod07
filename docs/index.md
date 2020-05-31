@@ -60,6 +60,20 @@ except FileNotFoundError as e:
 
 When a call is intentionally made using the wrong file name, a more user-friendly error message is printed out as shown in Figure 6.
 
+[Figure 6 - User Friendly Error Message - Part I](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Figure%206.png)
+
+The program does not stop running, it continues to the next line in the code which is pickle loading the object file.  Since the object file does not exist, and could not be opened, it generates another error, different than the FileNotFoundError. To prevent this, I wanted to exit the program at this point.  I imported the system file and used the sys.exit statement to end the program as shown Figure 7.
+
+```
+import sys
+sys.exit()
+```
+*Figure 7 - Exiting the Program When File Is Not Found  
+
+So, even when there was a problem running the program, there are no more difficult to decipher error messages.
+
+The final output has a much nicer appearance as shown in Figure 8.
+
 
 ### Subtopic
 
