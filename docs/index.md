@@ -45,7 +45,9 @@ The pickle byte file has the extension “.dat”.  Pickle is used only with Pyt
 [Figure 4 - Reading & Writing Binary Data](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Figure%204.png)
 
 Notice the error message caused intentionally because I tried to read from a file that did not exist.  This takes us to the next subject, which is “structured error handling.”
-Structured Error Handling
+
+## Structured Error Handling  
+
 There are two types of errors in Python.  One type is the type of error that occurs when the developer is writing the program (syntax).  The other type occurs when the syntax is correct, but the program does not run correctly (run-time) errors.  A logic error is one type of run-time error in which the program runs correctly but produces the wrong output, or not what the programmer expected.  Another type of runtime error is one that causes the program to crash or stop running.  The official Python documentation website is the best source of information on Errors and Exceptions (https://docs.python.org/3/tutorial/errors.html?highlight=error%20handling, 5.30.2020, External) but can be very technical.  They Python website provides an extensive list of built-in exceptions which is a great reference for looking up exceptions to use in your code (https://docs.python.org/3/library/exceptions.html, 5.30.2020, External).  The official Python website is a good source to use as a reference if you already understand the basic concepts and just need to look up some syntax or get some clarification.
 
 Error handling is a good way to alert the user to the fact that they may be using the program in a different way than you intended.  Instead of giving the user an error written in computereze, you can structure your code so that it gives them an error message that is more sensical.  For example, the code in Figure 5 can be used to explain to the user that the file must exist before running the program.
