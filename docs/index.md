@@ -10,7 +10,7 @@ This assignment involves working with GitHub, demonstrating how to work with bin
 ## Using the Pickling Module in Python
 Pickling refers to the process of converting python data into binary.  It is also known as “serialization” or “marshalling” or “flattening.”  Unpickling refers to the process of converting binary data back into a Python object.  To “pickle” or convert a Python object to binary, you call the dump() function.  To unpickle the binary data, you call the load() function.  An excellent website for explaining and providing the syntax for the pickling module is the official Python software website:  (https://docs.python.org/3/library/pickle.html, 5.30.2020, External).  This is a reliable website that can be trusted to be very accurate and updated for the most recent versions of Python.  Although it is very accurate, it can be a bit challenging for a beginner to understand.  The pickle dump and load syntax from this website is shown in Figure 1.
 
-![Figure 1a](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure1a.png "Pickle Dump & Pickle Load Syntax")
+![Figure 1a](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure1a.png "Pickle Dump & Pickle Load Syntax")  
 ![Figure 1b](https://tollivne.github.io/IntroToProg-Python-Mod07/Fibure1b.png "Pickle Dump & Pickle Load Syntax")  
 *Figure 1 - Pickle Dump & Pickle Load Syntax*
 
