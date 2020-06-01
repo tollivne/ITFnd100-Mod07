@@ -12,6 +12,7 @@ Pickling refers to the process of converting python data into binary.  It is als
 
 ![Figure 1a](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Figure%201a.png)  
 ![Figure 1b](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Fibure%201b.png)
+*Figure 1 - Pickle Dump & Pickle Load Syntax*
 
 The code that I wrote to save the Python object data to a binary file is shown in Figure 2.
 
@@ -90,7 +91,7 @@ except Exception as e:
 ```
 *Figure 9 - General Exception Block*
 
-Printing the general error and type is added information that can help the developer with troubleshooting.  I also added the printing of the error, document string, and type for the FileNotFound error.  Shown in Figure 10 is a screenshot of the program running in the CMD window.  I was trying to get an error message.  The last time I ran a program in the command window, it could not find the file and I had to navigate to the directory containing the python program before running it.  I had used a “relative path” in my program.  Strangely enough, it didn’t give me the FileNotFoundError this time!
+Printing the general error and type is added information that can help the developer with troubleshooting.  I also added the printing of the error, document string, and type for the FileNotFound error.  Just for contrast, shown in Figure 10 is a screenshot of the program running correctly with no errors in the CMD window.  
 
 ![Figure 10 - Program Run in CMD Window](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Figure%2010.png)
 
