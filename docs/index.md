@@ -10,7 +10,8 @@ This assignment involves working with GitHub, demonstrating how to work with bin
 ## Using the Pickling Module in Python
 Pickling refers to the process of converting python data into binary.  It is also known as “serialization” or “marshalling” or “flattening.”  Unpickling refers to the process of converting binary data back into a Python object.  To “pickle” or convert a Python object to binary, you call the dump() function.  To unpickle the binary data, you call the load() function.  An excellent website for explaining and providing the syntax for the pickling module is the official Python software website:  (https://docs.python.org/3/library/pickle.html, 5.30.2020, External).  This is a reliable website that can be trusted to be very accurate and updated for the most recent versions of Python.  Although it is very accurate, it can be a bit challenging for a beginner to understand.  The pickle dump and load syntax from this website is shown in Figure 1.
 
-![Figure 1a](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 1a.png "Pickle Dump & Pickle Load Syntax")  
+![Figure 1a](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 1a.png "Pickle Dump & Pickle Load Syntax")
+
 ![Figure 1b](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 1b.png "Pickle Dump & Pickle Load Syntax")  
 *Figure 1 - Pickle Dump & Pickle Load Syntax*
 
@@ -100,3 +101,5 @@ Printing the general error and type is added information that can help the devel
 
 ## Summary
 In this assignment, I used Python’s pickling module with the pickle.dump and the pickle.load to write data to a binary file and then read the data and print it out.  I also used structured error handling to try to foresee the type of errors a user may get and then print out a message that is more user-friendly than the built-in Python error messages.  The assignment involved researching various sources to find more information on pickling and on error handling.  I learned that pickling was faster than reading and writing to a JSON file, I learned that Git was created by the same person who created Linux and that it is not a new tool but instead has been around since 2005.  I learned a lot about the markdown language in this assignment and was able to post the assignment to the web.  I look forward to the next assignment.
+
+![Link to GitHub index file](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/index.md)
