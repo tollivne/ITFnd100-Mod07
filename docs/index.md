@@ -11,7 +11,7 @@ This assignment involves working with GitHub, demonstrating how to work with bin
 Pickling refers to the process of converting python data into binary.  It is also known as “serialization” or “marshalling” or “flattening.”  Unpickling refers to the process of converting binary data back into a Python object.  To “pickle” or convert a Python object to binary, you call the dump() function.  To unpickle the binary data, you call the load() function.  An excellent website for explaining and providing the syntax for the pickling module is the official Python software website:  (https://docs.python.org/3/library/pickle.html, 5.30.2020, External).  This is a reliable website that can be trusted to be very accurate and updated for the most recent versions of Python.  Although it is very accurate, it can be a bit challenging for a beginner to understand.  The pickle dump and load syntax from this website is shown in Figure 1.
 
 ![Figure 1a](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 1a.png "Pickle Dump & Pickle Load Syntax")  
-![Figure 1b](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 1b.png "Pickle Dump & Pickle Load Syntax")
+![Figure 1b](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 1b.png "Pickle Dump & Pickle Load Syntax")  
 *Figure 1 - Pickle Dump & Pickle Load Syntax*
 
 The code that I wrote to save the Python object data to a binary file is shown in Figure 2.
@@ -42,7 +42,7 @@ I am a big fan of video tutorials and the following video was great for explaini
 
 The pickle byte file has the extension “.dat”.  Pickle is used only with Python.  A note of caution is that pickle is not secure.  It is not human readable, and the pickle file could be hacked and contain malicious code.  Care should be used if reading someone else’s pickle file or downloading pickle files from the internet.  Figure 4 shows a screenshot of the code run using a file called “ToDoFile.txt."  The program was expecting an object file by the name AppData.dat.
 
-![Figure 4 - Reading & Writing Binary Data](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 4.png "Reading & Writing Binary Data")
+![Figure 4 - Reading & Writing Binary Data](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 4.png "Reading & Writing Binary Data")  
 *Figure 4 - Reading & Writing Binary Data*
 
 Notice the error message caused intentionally because I tried to read from a file that did not exist.  This takes us to the next subject, which is “structured error handling.”
@@ -65,7 +65,7 @@ except FileNotFoundError as e:
 
 When a call is intentionally made using the wrong file name, a more user-friendly error message is printed out as shown in Figure 6.
 
-![Figure 6 - User Friendly Error Message - Part I](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 6.png "User Friendly Error Message")
+![Figure 6 - User Friendly Error Message - Part I](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 6.png "User Friendly Error Message")  
 *Figure 6 - User Friendly Error Message*
 
 The program does not stop running, it continues to the next line in the code which is pickle loading the object file.  Since the object file does not exist, and could not be opened, it generates another error, different than the FileNotFoundError. To prevent this, I wanted to exit the program at this point.  I imported the system file and used the sys.exit statement to end the program as shown Figure 7.
@@ -80,7 +80,7 @@ So, even when there was a problem running the program, there are no more difficu
 
 The final output has a much nicer appearance as shown in Figure 8.
 
-![Figure 8 - Final Output of Code run with Structured Error Handling](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 8.png "Final Output of Code run with Structured Error Handling")
+![Figure 8 - Final Output of Code run with Structured Error Handling](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 8.png "Final Output of Code run with Structured Error Handling")  
 *Figure 8 - Final Output of Code run with Structured Error Handling*
 
 Lastly, a “General” exception error can be placed LAST to be invoked if the error is not caught by one of the earlier more specific errors as shown in Figure 9.
@@ -95,7 +95,7 @@ except Exception as e:
 
 Printing the general error and type is added information that can help the developer with troubleshooting.  I also added the printing of the error, document string, and type for the FileNotFound error.  Just for contrast, shown in Figure 10 is a screenshot of the program running correctly with no errors in the CMD window.  
 
-![Figure 10 - Program Run in CMD Window](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 10.png "Program Run in CMD Window")
+![Figure 10 - Program Run in CMD Window](https://tollivne.github.io/IntroToProg-Python-Mod07/Figure 10.png "Program Run in CMD Window")  
 *Figure 10 - Program Run in CMD Windowg*
 
 ## Summary
