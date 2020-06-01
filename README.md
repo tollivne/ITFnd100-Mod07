@@ -1,7 +1,7 @@
 # Assignment 7
 # Working with Binary Files & Structured Error Handling
 **Dev:** *N. Tolliver*  
-**Date:** *5.28.2020*
+**Date:** *6.1.2020*
 
 ## Introduction
 
