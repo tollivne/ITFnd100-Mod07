@@ -102,3 +102,7 @@ Printing the general error and type is added information that can help the devel
 In this assignment, I used Python’s pickling module with the pickle.dump and the pickle.load to write data to a binary file and then read the data and print it out.  I also used structured error handling to try to foresee the type of errors a user may get and then print out a message that is more user-friendly than the built-in Python error messages.  The assignment involved researching various sources to find more information on pickling and on error handling.  I learned that pickling was faster than reading and writing to a JSON file, I learned that Git was created by the same person who created Linux and that it is not a new tool but instead has been around since 2005.  I learned a lot about the markdown language in this assignment and was able to post the assignment to the web.  I look forward to the next assignment.
 
 [GitHub Index File](https://tollivne.github.io/IntroToProg-Python-Mod07/)
+[Link to Complete Paper in MSWord](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Assignment07.docx)  
+[Link to Python Code](https://github.com/tollivne/IntroToProg-Python-Mod07/blob/master/docs/Assignment07.py)  
+[Google Homepage](https://www.google.com)  
+[GitHub Webpage Code CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Sheatsheet)
